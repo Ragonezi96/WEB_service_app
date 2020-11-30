@@ -60,6 +60,7 @@ class _PessoaFormViewState extends State<PessoaFormView> {
   _editText(
       String field, TextEditingController controller, TextInputType type) {
     return TextFormField(
+      enabled: false,
       controller: controller,
       validator: (s) => _validate(s, field),
       keyboardType: type,
